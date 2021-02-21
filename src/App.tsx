@@ -1,11 +1,12 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import "./App.css"
+// import "./App.css"
 
 import Home from "./components/home/home"
 import Mickey from "./components/mickey/mickey"
 import XmasHouse from "./components/xmasHouse/xmasHouse"
+import FreeForm from "./components/freeForm/freeForm"
 
 function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -36,8 +37,13 @@ function App() {
           <Link to="/mickey">Mickey</Link>
           &nbsp;&nbsp;
           <Link to ="/xmasHouse">Xmas House</Link>
+          &nbsp;&nbsp;
+          <Link to ="/freeForm">Free Form?</Link>
         </nav>
         <Switch>
+        <Route path = "/freeForm">
+            <FreeForm/>
+          </Route>
           <Route path = "/xmasHouse">
             <XmasHouse/>
           </Route>
