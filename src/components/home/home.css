@@ -1,0 +1,22 @@
+.homePage {
+  background-image: url("https://grassreport.files.wordpress.com/2009/12/splashing-web.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px 600px;
+  position: relative;
+  /* opacity: 0.5; */
+}
+
+.home {
+  text-decoration: underline;
+}
+
+.text {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 2, 3);
+  text-align: center;
+  padding: 3%;
+  margin: 3%;
+  display: inline;
+  font-weight: 700;
+}

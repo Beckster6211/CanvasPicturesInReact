@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
- 
+
 import Home from "./components/home/home"
 import Mickey from "./components/mickey/mickey"
 import XmasHouse from "./components/xmasHouse/xmasHouse"
