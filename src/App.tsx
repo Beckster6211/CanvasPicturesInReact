@@ -1,6 +1,8 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
+import "./App.css"
+
 import Home from "./components/home/home"
 import Mickey from "./components/mickey/mickey"
 import XmasHouse from "./components/xmasHouse/xmasHouse"
@@ -22,12 +24,13 @@ function App() {
   }, [context]);
 
   return (
-    <Router>
-    <div
+    <Router >
+    <div className = "App"
       style={{
         textAlign: 'center',
       }}>
         <nav>
+          <br></br>
           <Link to="/">Home</Link>
           &nbsp;&nbsp;
           <Link to="/mickey">Mickey</Link>
